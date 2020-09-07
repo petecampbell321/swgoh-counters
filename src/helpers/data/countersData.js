@@ -1,11 +1,9 @@
-import axios from 'axios';
+export default async function getCounterData() {
+  const response = await fetch(process.env.REACT_APP_COUNTER_API_URL);
+  const body = await response.json();
 
-const getCounters = () => new Promise((resolve, reject) => {
-  axios.get('https://api.sheety.co/e505ae20-ec5b-46e8-a86f-7149b9823b64')
-    .then((res) => {
-      resolve(res.data);
-    })
-    .catch(err => reject(err));
-});
-
-export default { getCounters };
+  if (response.status !== 200) {
+    throw Error(body.message);
+  }
+  return body;
+}

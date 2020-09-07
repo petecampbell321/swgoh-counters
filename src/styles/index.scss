@@ -16,3 +16,70 @@ code {
 p {
   font-family: "Roboto Condensed",
 }
+
+.columnTitles {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  h1 {
+    font-size: 1.2rem;
+  }
+  font-size: .85rem;
+}
+
+.contentWrapper {
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+
+.countersDetails {
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+.patreonBtn {
+  background: rgba(255, 0, 0, 0.863);
+  color: whitesmoke;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.2rem;
+}
+
+.reverseCounterButton {
+  height: 50%;
+  font-size: .7rem;
+  text-align: center;
+  padding: .25rem;
+}
+
+@media only screen and (min-width:600px) {
+  .reverseCounterButton {
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .reverseCounterButton {
+    font-size: 1rem;
+  }
+
+  .columnTitles {
+    h1 {
+      font-size: 2rem;
+    }
+
+    font-size: 1rem;
+  }
+
+  .countersDetails {
+    h5 {
+      font-size: 1.2rem;
+    }
+  }
+}

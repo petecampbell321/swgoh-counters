@@ -1,16 +1,9 @@
+// raise shared code with Counters3v3
 .Counters5v5 {
   display: flex;
   flex-direction: column;
   text-align: center;
-}
-
-.columnTitles {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  h1 {
-    font-size: 1.7rem;
-  }
+  align-items: center;
 }
 
 .columnTeams {
@@ -27,18 +20,6 @@
   margin-right: 10px;
 }
 
-.patreonBtn {
-  background: rgba(255, 0, 0, 0.863);
-  color: whitesmoke;
-  // display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  font-weight: 500;
-  font-size: 1.25em;
-}
-
 .softCounterColorBox {
   display: inline-block;
   height: 20px;
@@ -46,13 +27,4 @@
   background-color: #9B47E4;
   border-radius: 100px;
   margin-right: 10px;
-}
-
-@media only screen and (min-width:768px) {
-  /* for desktop */
-  .columnTitles {
-    h1 {
-      font-size: 2rem;
-    }
-  }
 }
